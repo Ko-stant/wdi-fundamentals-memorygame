@@ -1,3 +1,8 @@
+a {
+	display: block;
+	text-decoration: none;
+}
+
 body {
 	text-align: center;
 	margin: 0;
@@ -19,12 +24,13 @@ h1 {
 
 .pageLink {
 	background-color: #00A6B3;
-	padding: 20px 0;
+	padding: 20px;
 }
 
 .pageLink > a {
 	font-family: Raleway;
 	color: #FFF;
+	display: inline;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 400;
@@ -32,6 +38,7 @@ h1 {
 	margin: 0 20px;
 	border: 1px solid #FFF;
 	border-radius: 3px;
+	padding: 1px 3px;
 }
 
 .pageLink > a:hover {
@@ -79,7 +86,11 @@ ul {
   overflow: hidden;
 }
 
-.mediaContact > li, a {
+.mediaContact {
+	padding: 15px 5px 10px 5px;
+}
+
+.mediaContact a {
 	padding-right: 5px;
 	padding-left: 5px;
 	text-decoration: none;
@@ -87,18 +98,21 @@ ul {
 	color: gray;
 }
 
-.mediaContact > li, a:hover {
+.mediaContact > a:hover {
 	color: #FFF;
 }
+
 
 .copyright {
 	font-family: Raleway;
 	float: left;
+	padding-bottom: 10px;
 }
 
 .message {
 	font-family: Raleway;
 	float: right;
+	padding-bottom: 10px;
 }
 
 .clearfix:after {
